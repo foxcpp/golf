@@ -52,6 +52,7 @@ analyzes structure of the final executable.
 - Counts C functions as 'unknown' without per-package separation (limitation)
 - Debug, file/line and relocation info is not reported in per-package sizes (can be fixed)
 - Limited to ELF binary format (can be fixed)
+- Doesn't care how you build your code or whether you have sources at all
 
 ## goweight
 - Uses pre-linker artifacts, ignoring what linker can possibly do with them
