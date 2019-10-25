@@ -53,8 +53,9 @@ analyzes structure of the final executable.
 - Debug, file/line and relocation info is not reported in per-package sizes (can be fixed)
 - Limited to ELF binary format (can be fixed)
 - Doesn't care how you build your code or whether you have sources at all
+  Doesn't work with stripped binaries, though.
 
-## goweight
+### goweight
 - Uses pre-linker artifacts, ignoring what linker can possibly do with them
 - Associates functions from C with Go packages that introduced them
 - Debug and file/line info is included intp per-package sizes
