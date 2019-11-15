@@ -150,7 +150,7 @@ symloop:
 			info.TotalObjs += sym.Size
 		}
 
-		pkgName := guessPackage(sym)
+		pkgName := guessPackage(sym.Name)
 
 		if pkgName == "" {
 			if *unknownList {
