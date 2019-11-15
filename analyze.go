@@ -153,6 +153,9 @@ symloop:
 		pkgName := guessPackage(sym)
 
 		if pkgName == "" {
+			if *unknownList {
+				log.Printf("Unknown symbol: %s (size: %d)", sym.Name, sym.Size)
+			}
 			if executable {
 				info.UnknownFuncs += sym.Size
 			} else {

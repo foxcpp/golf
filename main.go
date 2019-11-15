@@ -10,9 +10,10 @@ import (
 )
 
 var (
-	verbose   = flag.Bool("v", false, "Log what's going on")
-	pkgsLimit = flag.Int("top", 10, "Print stats only for first N packages, 0 to disable")
-	jsonOut   = flag.Bool("json", false, "Print all stats in JSON format")
+	verbose     = flag.Bool("v", false, "Log what's going on")
+	pkgsLimit   = flag.Int("top", 10, "Print stats only for first N packages, 0 to disable")
+	jsonOut     = flag.Bool("json", false, "Print all stats in JSON format")
+	unknownList = flag.Bool("unknown-list", false, "Print unclassified (unknown) symbol names")
 )
 
 func main() {
